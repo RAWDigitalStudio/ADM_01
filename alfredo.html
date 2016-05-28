@@ -2,13 +2,61 @@
 <html>
 <head>
 	<title>Markup Grid</title>
-	<style>
-		body{
-			background-color: blue;
-		}
+	<style >
+	     body{
+	     	 background-color: black;
+	     }
+	     .row{
+	     	width: 100%
+	     }
+	     .row:after{
+	     	content: "";
+	     	display: table;
+	     	clear: both;
+	     }
+	     .col{
+	     	border: 1px solid white;
+	     	box-sizing: border-box;
+	     	float: left;
+	     }
+	     .four{
+	     	width: 33.3334%;
+	     }
+	     .six{
+	     	width: 50%;
+	     }
+	     .eight{
+	     	width: 66.6667%;
+	     }
+	      .twelve{
+	     	width: 100%;
+	     }
+	     .hFour{
+	     	height: 33.3334vh;
+	     }
+	     .hEight{
+	     	height: 66.6667vh;
+	     }
 	</style>
+	  
 </head>
-<body>
-
-</body>
+ <body>
+	 <div class="row"> 
+	 	<div class="col four hFour"></div>
+	 	<div class="col four hFour"></div>
+	 	<div class="col four hFour"></div>
+	 </div>
+	 <div class="row">
+	 		<div class="col eight hEight">
+	 			<div class="col twelve hFour"></div>
+	 			<div class="col six hFour"></div>
+	 			<div class="col six hFour"></div>
+	 		</div>
+	 	<div class="col four hEight"></div>
+	 </div>
+	 <div class="row">
+	 	<div class="col six hFour"></div>
+	 	<div class="col six hFour"></div>
+	 </div>
+ </body>
 </html>
