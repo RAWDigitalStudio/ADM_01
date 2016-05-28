@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Markup Grid</title>
@@ -6,9 +6,66 @@
 		body {
 			background-color: green;
 		}
+
+		.row {
+			width: 100%
+		}
+
+		.col {
+			border: 1px solid black;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		.four {
+			width: 33.3334%;
+			height: 50vh;
+		}
+
+		.eight {
+			width: 66.6667%;
+			height: 50vh;
+		}
+
+		.twelve {
+			width: 100%;
+			height: 50%;
+		}
+
+		.six {
+			width: 50%;
+			height: 50%;
+		}
+
+		.footer {
+			width: 100%;
+			height: 300px;
+		}
+
 	</style>
 </head>
 <body>
+	<div class="row">
+		<div class="col four"></div>
+		<div class="col four"></div>
+		<div class="col four"></div>
+	</div>
+
+	<div class="row">
+		<div class="col eight">
+			<div class="col twelve"></div>
+			<div class="col six"></div>
+			<div class="col six"></div>
+		</div>
+
+		<div class="col four"></div>
+
+	</div>
+
+	<div class="footer">
+		<div class="col six"></div>
+		<div class="col six"></div>
+	</div>
 
 </body>
 </html>
